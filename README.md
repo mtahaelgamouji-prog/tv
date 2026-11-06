@@ -13,7 +13,7 @@ Site statique (HTML/CSS/JS) hébergé sur Netlify. Chaque modification enregistr
 | Pour changer…                      | Fichier       | Ce qu'il faut chercher          |
 |------------------------------------|---------------|---------------------------------|
 | Le nom « Nova TV »                 | `index.html`  | `Nova` (logo, titre, pied de page) |
-| Les prix des offres                | `index.html`  | `<div class="price">`           |
+| Les prix des offres (en €)         | `index.html`  | `<div class="price">`           |
 | Les textes, la FAQ                 | `index.html`  | le texte lui-même               |
 | L'e-mail de contact                | `index.html`  | `contact@exemple.com`           |
 | Le numéro WhatsApp                 | `script.js`   | `WHATSAPP_NUMBER`               |
