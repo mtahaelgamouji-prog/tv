@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nova TV — Chaînes TV & VOD en illimité</title>
+  <meta name="description" content="Accédez à des milliers de chaînes TV et à une large bibliothèque de films et séries en VOD, sur tous vos appareils." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== EN-TÊTE ===== -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#" class="logo">Nova<span>TV</span></a>
+      <nav class="nav" id="nav">
+        <a href="#contenus">Contenus</a>
+        <a href="#offres">Offres</a>
+        <a href="#appareils">Appareils</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact" class="btn btn--small">Commander</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== ACCUEIL ===== -->
+  <section class="hero">
+    <div class="hero__glow"></div>
+    <div class="container hero__inner">
+      <p class="tag">● En direct · 24h/24</p>
+      <h1>Toutes vos chaînes TV<br />et la VOD, <em>au même endroit</em>.</h1>
+      <p class="hero__text">
+        Sport, films, séries, info, enfants : des milliers de chaînes et une
+        bibliothèque VOD mise à jour chaque semaine, en HD et 4K, sur tous vos écrans.
+      </p>
+      <div class="hero__actions">
+        <a href="#offres" class="btn">Voir les offres</a>
+        <a href="#contact" class="btn btn--ghost">Essai gratuit 24h</a>
+      </div>
+      <ul class="stats">
+        <li><strong>10 000+</strong><span>chaînes</span></li>
+        <li><strong>50 000+</strong><span>films & séries</span></li>
+        <li><strong>4K</strong><span>qualité max</span></li>
+        <li><strong>7j/7</strong><span>support</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== CONTENUS ===== -->
+  <section class="section" id="contenus">
+    <div class="container">
+      <h2 class="section__title">Tout ce que vous aimez regarder</h2>
+      <p class="section__sub">Des contenus pour toute la famille, classés par catégorie.</p>
+      <div class="grid grid--4">
+        <article class="card cat cat--sport">
+          <div class="cat__icon">⚽</div>
+          <h3>Sport</h3>
+          <p>Football, basket, tennis, sports de combat, en direct et en replay.</p>
+        </article>
+        <article class="card cat cat--movies">
+          <div class="cat__icon">🎬</div>
+          <h3>Films</h3>
+          <p>Nouveautés, grands classiques et films du monde entier en VOD.</p>
+        </article>
+        <article class="card cat cat--series">
+          <div class="cat__icon">📺</div>
+          <h3>Séries</h3>
+          <p>Saisons complètes, épisodes ajoutés chaque semaine.</p>
+        </article>
+        <article class="card cat cat--kids">
+          <div class="cat__icon">🧸</div>
+          <h3>Enfants</h3>
+          <p>Dessins animés et programmes jeunesse, avec contrôle parental.</p>
+        </article>
+        <article class="card cat cat--news">
+          <div class="cat__icon">🌍</div>
+          <h3>Info</h3>
+          <p>Chaînes d'information nationales et internationales en continu.</p>
+        </article>
+        <article class="card cat cat--doc">
+          <div class="cat__icon">🦁</div>
+          <h3>Documentaires</h3>
+          <p>Nature, histoire, sciences et voyages.</p>
+        </article>
+        <article class="card cat cat--music">
+          <div class="cat__icon">🎵</div>
+          <h3>Musique</h3>
+          <p>Clips, concerts et chaînes musicales.</p>
+        </article>
+        <article class="card cat cat--world">
+          <div class="cat__icon">🗺️</div>
+          <h3>International</h3>
+          <p>Chaînes en français, arabe, anglais, espagnol et plus.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== OFFRES ===== -->
+  <!-- Pour changer un prix : modifiez le texte dans <div class="price">…</div> -->
+  <section class="section section--alt" id="offres">
+    <div class="container">
+      <h2 class="section__title">Choisissez votre offre</h2>
+      <p class="section__sub">Sans engagement. Activation rapide après votre commande.</p>
+      <div class="grid grid--4 plans">
+
+        <article class="card plan">
+          <h3>1 mois</h3>
+          <div class="price">99<span> DH</span></div>
+          <ul>
+            <li>Toutes les chaînes TV</li>
+            <li>Accès VOD complet</li>
+            <li>HD / Full HD / 4K</li>
+            <li>1 écran</li>
+          </ul>
+          <a href="#contact" class="btn btn--ghost btn--block" data-plan="1 mois">Commander</a>
+        </article>
+
+        <article class="card plan">
+          <h3>3 mois</h3>
+          <div class="price">249<span> DH</span></div>
+          <ul>
+            <li>Toutes les chaînes TV</li>
+            <li>Accès VOD complet</li>
+            <li>HD / Full HD / 4K</li>
+            <li>1 écran</li>
+          </ul>
+          <a href="#contact" class="btn btn--ghost btn--block" data-plan="3 mois">Commander</a>
+        </article>
+
+        <article class="card plan plan--featured">
+          <div class="plan__badge">Le plus choisi</div>
+          <h3>6 mois</h3>
+          <div class="price">399<span> DH</span></div>
+          <ul>
+            <li>Toutes les chaînes TV</li>
+            <li>Accès VOD complet</li>
+            <li>HD / Full HD / 4K</li>
+            <li>2 écrans</li>
+          </ul>
+          <a href="#contact" class="btn btn--block" data-plan="6 mois">Commander</a>
+        </article>
+
+        <article class="card plan">
+          <h3>12 mois</h3>
+          <div class="price">699<span> DH</span></div>
+          <ul>
+            <li>Toutes les chaînes TV</li>
+            <li>Accès VOD complet</li>
+            <li>HD / Full HD / 4K</li>
+            <li>2 écrans · support prioritaire</li>
+          </ul>
+          <a href="#contact" class="btn btn--ghost btn--block" data-plan="12 mois">Commander</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== APPAREILS ===== -->
+  <section class="section" id="appareils">
+    <div class="container">
+      <h2 class="section__title">Regardez sur tous vos écrans</h2>
+      <p class="section__sub">Une seule offre, compatible avec la plupart des appareils.</p>
+      <div class="devices">
+        <div class="device"><span>📺</span>Smart TV</div>
+        <div class="device"><span>🤖</span>Android / Box</div>
+        <div class="device"><span>📱</span>iPhone & iPad</div>
+        <div class="device"><span>💻</span>PC & Mac</div>
+        <div class="device"><span>🔥</span>Clé TV</div>
+        <div class="device"><span>🎮</span>Et plus encore</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ÉTAPES ===== -->
+  <section class="section section--alt">
+    <div class="container">
+      <h2 class="section__title">Comment ça marche ?</h2>
+      <div class="grid grid--3 steps">
+        <div class="step"><div class="step__num">1</div><h3>Choisissez votre offre</h3><p>Sélectionnez la durée qui vous convient.</p></div>
+        <div class="step"><div class="step__num">2</div><h3>Contactez-nous</h3><p>Envoyez-nous un message sur WhatsApp pour finaliser la commande.</p></div>
+        <div class="step"><div class="step__num">3</div><h3>Profitez</h3><p>Recevez vos accès et commencez à regarder en quelques minutes.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="section" id="faq">
+    <div class="container container--narrow">
+      <h2 class="section__title">Questions fréquentes</h2>
+      <details class="faq">
+        <summary>Combien de temps faut-il pour l'activation ?</summary>
+        <p>En général quelques minutes après la confirmation de votre commande.</p>
+      </details>
+      <details class="faq">
+        <summary>Puis-je tester avant de payer ?</summary>
+        <p>Oui, nous proposons un essai gratuit de 24h. Contactez-nous pour en bénéficier.</p>
+      </details>
+      <details class="faq">
+        <summary>Quels sont les moyens de paiement ?</summary>
+        <p>Virement bancaire, versement ou paiement en espèces. Contactez-nous pour les détails.</p>
+      </details>
+      <details class="faq">
+        <summary>Ai-je besoin d'une bonne connexion internet ?</summary>
+        <p>Nous recommandons au moins 10 Mb/s pour la HD et 25 Mb/s pour la 4K.</p>
+      </details>
+      <details class="faq">
+        <summary>Y a-t-il un engagement ?</summary>
+        <p>Non, aucune reconduction automatique. Vous renouvelez seulement si vous le souhaitez.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <!-- Pour changer le numéro WhatsApp : modifiez WHATSAPP_NUMBER dans script.js -->
+  <section class="section section--cta" id="contact">
+    <div class="container cta">
+      <h2>Prêt à commencer ?</h2>
+      <p>Écrivez-nous sur WhatsApp, nous vous répondons rapidement, 7j/7.</p>
+      <a href="#" class="btn btn--whatsapp js-whatsapp">💬 Commander sur WhatsApp</a>
+      <p class="cta__mail">ou par e-mail : <a href="mailto:contact@exemple.com">contact@exemple.com</a></p>
+    </div>
+  </section>
+
+  <!-- ===== PIED DE PAGE ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#" class="logo">Nova<span>TV</span></a>
+      <p>© <span id="year"></span> Nova TV. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <a href="#" class="float-wa js-whatsapp" aria-label="WhatsApp">💬</a>
+
+  <script src="script.js"></script>
+</body>
+</html>
