@@ -5,25 +5,39 @@ const DEFAULT_MESSAGE = "Bonjour, je souhaite des informations sur vos offres TV
 function waLink(message) {
   return "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(message);
 }
+function openInNewTab(el) { el.target = "_blank"; el.rel = "noopener"; }
 
 // Liens WhatsApp généraux
 document.querySelectorAll(".js-whatsapp").forEach((el) => {
   el.href = waLink(DEFAULT_MESSAGE);
-  el.target = "_blank";
-  el.rel = "noopener";
+  openInNewTab(el);
 });
 
-// Boutons "Commander" des offres : ouvre WhatsApp avec l'offre choisie
+// Boutons des offres : ouvrent WhatsApp avec l'offre choisie
 document.querySelectorAll("[data-plan]").forEach((el) => {
-  el.href = waLink("Bonjour, je souhaite commander l'offre " + el.dataset.plan + ".");
-  el.target = "_blank";
-  el.rel = "noopener";
+  el.href = waLink("Bonjour, je souhaite m'abonner à l'offre " + el.dataset.plan + ".");
+  openInNewTab(el);
 });
+
+// Flèches des rangées
+document.querySelectorAll(".row").forEach((row) => {
+  const track = row.querySelector(".row__track");
+  row.querySelectorAll(".arrow").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      track.scrollBy({ left: Number(btn.dataset.dir) * track.clientWidth * 0.8, behavior: "smooth" });
+    });
+  });
+});
+
+// En-tête opaque au défilement
+const header = document.getElementById("header");
+const onScroll = () => header.classList.toggle("scrolled", window.scrollY > 40);
+window.addEventListener("scroll", onScroll);
+onScroll();
 
 // Menu mobile
-const burger = document.getElementById("burger");
 const nav = document.getElementById("nav");
-burger.addEventListener("click", () => nav.classList.toggle("open"));
+document.getElementById("burger").addEventListener("click", () => nav.classList.toggle("open"));
 nav.querySelectorAll("a").forEach((a) => a.addEventListener("click", () => nav.classList.remove("open")));
 
 // Année du pied de page
