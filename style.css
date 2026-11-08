@@ -64,22 +64,18 @@ button { font: inherit; color: inherit; }
 .billboard { position: relative; min-height: min(92vh, 820px); display: flex; align-items: flex-end; overflow: hidden; }
 .billboard__bg {
   position: absolute; inset: 0;
-  background:
-    radial-gradient(ellipse at 72% 38%, rgba(232, 120, 60, .55), transparent 55%),
-    radial-gradient(ellipse at 85% 70%, rgba(150, 30, 40, .6), transparent 55%),
-    radial-gradient(ellipse at 40% 20%, rgba(232, 184, 74, .25), transparent 50%),
-    linear-gradient(135deg, #1a0a08, #3a120c 45%, #120607);
-  animation: drift 18s ease-in-out infinite alternate;
+  background: url("hero.jpg") center right / cover no-repeat;
+  animation: drift 20s ease-in-out infinite alternate;
 }
-@keyframes drift { to { transform: scale(1.08) translate(-1.5%, 1%); } }
+@keyframes drift { from { transform: scale(1.02); } to { transform: scale(1.08); } }
 .billboard__shade {
   position: absolute; inset: 0;
-  background: linear-gradient(90deg, #000 0%, #000a 38%, transparent 70%),
-              linear-gradient(0deg, #000 0%, transparent 35%);
+  background: linear-gradient(90deg, #000e 0%, #000a 40%, #0003 70%, transparent 100%),
+              linear-gradient(0deg, #000 0%, transparent 40%);
 }
 .billboard__content { position: relative; padding-bottom: 110px; max-width: 1320px; }
 .billboard__title {
-  font-size: clamp(2.8rem, 8vw, 6.2rem); font-weight: 900; line-height: .95;
+  font-size: clamp(2.4rem, 5.6vw, 4.6rem); font-weight: 900; line-height: .98;
   letter-spacing: -2px; max-width: 900px;
 }
 .billboard__meta { margin: 22px 0 14px; color: #d4d4d8; font-weight: 500; display: flex; align-items: center; gap: 10px; }
@@ -256,6 +252,8 @@ button { font: inherit; color: inherit; }
   .tile--poster { width: 150px; }
   .tile--poster h3 { font-size: 1rem; }
   .billboard { min-height: min(82vh, 640px); }
+  .billboard__bg { background-position: 72% center; }
+  .billboard__shade { background: linear-gradient(0deg, #000 0%, #000c 45%, #0004 100%); }
   .billboard__content { padding-bottom: 70px; }
   .section { padding: 70px 0; }
   .footer__grid { grid-template-columns: 1fr 1fr; }
