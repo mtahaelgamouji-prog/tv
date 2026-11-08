@@ -296,3 +296,7 @@ button { font: inherit; color: inherit; }
 }
 .billboard__title, .section__title, .faq-title, .cta h2 { text-transform: uppercase; }
 .btn { font-weight: 700; font-size: 1.02rem; }
+
+/* Espace sous le menu fixe */
+body { padding-top: 70px; }
+.header { background: rgba(0,0,0,.92); }
