@@ -42,3 +42,10 @@ nav.querySelectorAll("a").forEach((a) => a.addEventListener("click", () => nav.c
 
 // Année du pied de page
 document.getElementById("year").textContent = new Date().getFullYear();
+
+// FAQ : une seule réponse ouverte à la fois
+document.querySelectorAll(".faq").forEach((d) => {
+  d.addEventListener("toggle", () => {
+    if (d.open) document.querySelectorAll(".faq").forEach((o) => { if (o !== d) o.open = false; });
+  });
+});
