@@ -66,18 +66,18 @@ button { font: inherit; color: inherit; }
 .billboard { position: relative; min-height: min(92vh, 820px); display: flex; align-items: flex-end; overflow: hidden; }
 .billboard__bg {
   position: absolute; inset: 0;
-  background: #000 url("hero.jpg") right center / cover no-repeat;
+  background: #000 url("hero.jpg") left center / cover no-repeat;
   animation: drift 20s ease-in-out infinite alternate;
 }
 @keyframes drift { from { transform: scale(1.02); } to { transform: scale(1.08); } }
 .billboard__shade {
   position: absolute; inset: 0;
-  background: linear-gradient(90deg, #000 0%, #0008 35%, transparent 60%),
+  background: linear-gradient(270deg, #000 0%, #000c 30%, transparent 45%),
               linear-gradient(0deg, #000 0%, transparent 30%);
 }
-.billboard__content { position: relative; padding-bottom: 110px; max-width: 1320px; }
+.billboard__content { position: relative; padding-bottom: 110px; max-width: 1320px; padding-left: min(62%, 820px); }
 .billboard__title {
-  font-size: clamp(2.4rem, 5.6vw, 4.6rem); font-weight: 900; line-height: .98;
+  font-size: clamp(2.2rem, 4.4vw, 3.7rem); font-weight: 900; line-height: .98;
   letter-spacing: -2px; max-width: 640px;
 }
 .billboard__meta { margin: 22px 0 14px; color: #d4d4d8; font-weight: 500; display: flex; align-items: center; gap: 10px; }
@@ -262,9 +262,9 @@ button { font: inherit; color: inherit; }
   .tile--poster h3 { font-size: 1rem; }
   .billboard { min-height: min(82vh, 640px); }
   .billboard { min-height: 0; }
-  .billboard__bg { bottom: auto; height: 330px; background-position: 80% center; animation: none; }
-  .billboard__shade { bottom: auto; height: 332px; background: linear-gradient(0deg, #000 0%, transparent 45%); }
-  .billboard__content { padding-top: 300px; }
+  .billboard__bg { bottom: auto; height: 300px; background-position: 15% center; animation: none; }
+  .billboard__shade { bottom: auto; height: 302px; background: linear-gradient(0deg, #000 0%, transparent 45%); }
+  .billboard__content { padding-top: 280px; padding-left: 0; }
   .billboard__content { padding-bottom: 70px; }
   .section { padding: 70px 0; }
   .footer__grid { grid-template-columns: 1fr 1fr; }
