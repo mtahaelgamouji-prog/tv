@@ -265,3 +265,16 @@ button { font: inherit; color: inherit; }
 }
 
 .footer__grid--2 { grid-template-columns: 2fr 1fr; }
+
+/* Compatibilité */
+.compat__grid { list-style: none; display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+.compat__grid li {
+  background: #000; border: 1px solid var(--line); border-radius: 12px;
+  height: 96px; display: grid; place-items: center; padding: 10px; transition: border-color .2s;
+}
+.compat__grid li:hover { border-color: #55555c; }
+.compat__grid img { max-width: 100%; max-height: 64px; object-fit: contain; }
+.compat__more { font-size: 1.3rem; text-align: center; align-content: center; gap: 4px; }
+.compat__more span { display: block; font-size: .78rem; color: var(--muted); font-weight: 600; }
+.compat__note { color: #6b6b73; font-size: .75rem; margin-top: 14px; }
+@media (max-width: 560px) { .compat__grid { grid-template-columns: repeat(2, 1fr); } }
