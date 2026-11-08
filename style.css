@@ -263,3 +263,5 @@ button { font: inherit; color: inherit; }
   .plans, .plans--3 { grid-template-columns: 1fr; }
   .devices__list { grid-template-columns: repeat(2, 1fr); }
 }
+
+.footer__grid--2 { grid-template-columns: 2fr 1fr; }

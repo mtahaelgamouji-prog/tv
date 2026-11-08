@@ -18,12 +18,10 @@
     <div class="wrap header__inner">
       <a href="#" class="logo"><span class="logo__dot"></span>NOVA TV</a>
       <nav class="nav" id="nav">
-        <a href="#direct">Direct</a>
-        <a href="#films">Films</a>
-        <a href="#series">Séries</a>
-        <a href="#sport">Sport</a>
         <a href="#offres">Offres</a>
+        <a href="#appareils">Appareils</a>
         <a href="#faq">Aide</a>
+        <a href="#contact">Contact</a>
       </nav>
       <div class="header__right">
         <a href="#offres" class="btn btn--light btn--sm">S'abonner</a>
@@ -60,71 +58,6 @@
       <div><strong>Sans engagement</strong><span>résiliable à tout moment</span></div>
     </div>
   </section>
-
-  <!-- ===== RANGÉES DE PROGRAMMES ===== -->
-  <!-- Les titres ci-dessous sont des exemples : remplacez-les par vos programmes et ajoutez des images si vous le souhaitez -->
-  <main class="rows">
-
-    <section class="row" id="direct">
-      <div class="wrap row__head">
-        <h2>En direct maintenant</h2>
-        <div class="row__nav"><button class="arrow" data-dir="-1">‹</button><button class="arrow" data-dir="1">›</button></div>
-      </div>
-      <div class="row__track">
-        <article class="tile tile--wide p1"><span class="live">● DIRECT</span><h3>Grand Prix d'Europe</h3><p>Sport auto · Course</p></article>
-        <article class="tile tile--wide p2"><span class="live">● DIRECT</span><h3>Le Journal du soir</h3><p>Info · 20h00</p></article>
-        <article class="tile tile--wide p3"><span class="live">● DIRECT</span><h3>Derby du week-end</h3><p>Football · 2e mi-temps</p></article>
-        <article class="tile tile--wide p4"><span class="live">● DIRECT</span><h3>Concert Live Sessions</h3><p>Musique</p></article>
-        <article class="tile tile--wide p5"><span class="live">● DIRECT</span><h3>Planète Sauvage</h3><p>Documentaire</p></article>
-      </div>
-    </section>
-
-    <section class="row" id="films">
-      <div class="wrap row__head">
-        <h2>Films à l'affiche</h2>
-        <div class="row__nav"><button class="arrow" data-dir="-1">‹</button><button class="arrow" data-dir="1">›</button></div>
-      </div>
-      <div class="row__track">
-        <article class="tile tile--poster p6"><h3>L'Horizon</h3><p>Science-fiction</p></article>
-        <article class="tile tile--poster p7"><h3>Dernier Train</h3><p>Action</p></article>
-        <article class="tile tile--poster p8"><h3>Sable Rouge</h3><p>Aventure</p></article>
-        <article class="tile tile--poster p9"><h3>Le Pacte</h3><p>Thriller</p></article>
-        <article class="tile tile--poster p10"><h3>Été Indien</h3><p>Comédie</p></article>
-        <article class="tile tile--poster p11"><h3>Ombres</h3><p>Drame</p></article>
-        <article class="tile tile--poster p12"><h3>Petit Géant</h3><p>Animation</p></article>
-      </div>
-    </section>
-
-    <section class="row" id="series">
-      <div class="wrap row__head">
-        <h2>Séries à dévorer</h2>
-        <div class="row__nav"><button class="arrow" data-dir="-1">‹</button><button class="arrow" data-dir="1">›</button></div>
-      </div>
-      <div class="row__track">
-        <article class="tile tile--poster p3"><span class="badge">NOUVEAU</span><h3>Les Nuits de Marrakech</h3><p>Thriller · S1</p></article>
-        <article class="tile tile--poster p9"><h3>Cellule 9</h3><p>Policier · S3</p></article>
-        <article class="tile tile--poster p5"><h3>La Dynastie</h3><p>Drame · S2</p></article>
-        <article class="tile tile--poster p7"><h3>Station Zéro</h3><p>Science-fiction · S1</p></article>
-        <article class="tile tile--poster p1"><span class="badge">NOUVEAU</span><h3>Hôtel Atlas</h3><p>Comédie · S1</p></article>
-        <article class="tile tile--poster p11"><h3>Frontières</h3><p>Espionnage · S4</p></article>
-      </div>
-    </section>
-
-    <section class="row" id="sport">
-      <div class="wrap row__head">
-        <h2>Le meilleur du sport</h2>
-        <div class="row__nav"><button class="arrow" data-dir="-1">‹</button><button class="arrow" data-dir="1">›</button></div>
-      </div>
-      <div class="row__track">
-        <article class="tile tile--wide p2"><h3>Football</h3><p>Championnats et coupes</p></article>
-        <article class="tile tile--wide p4"><h3>Basket</h3><p>Matchs en direct et replays</p></article>
-        <article class="tile tile--wide p6"><h3>Tennis</h3><p>Tournois majeurs</p></article>
-        <article class="tile tile--wide p8"><h3>Sports de combat</h3><p>Boxe, MMA</p></article>
-        <article class="tile tile--wide p10"><h3>Sport auto</h3><p>Courses et qualifications</p></article>
-      </div>
-    </section>
-
-  </main>
 
   <!-- ===== OFFRES ===== -->
   <!-- Pour changer un prix : modifiez le texte dans <div class="price">…</div> -->
@@ -179,7 +112,7 @@
   </section>
 
   <!-- ===== APPAREILS ===== -->
-  <section class="section section--alt">
+  <section class="section section--alt" id="appareils">
     <div class="wrap devices">
       <div class="devices__text">
         <p class="eyebrow">Partout, tout le temps</p>
@@ -237,14 +170,10 @@
 
   <!-- ===== PIED DE PAGE ===== -->
   <footer class="footer">
-    <div class="wrap footer__grid">
+    <div class="wrap footer__grid footer__grid--2">
       <div>
         <a href="#" class="logo"><span class="logo__dot"></span>NOVA TV</a>
         <p class="footer__desc">Chaînes TV en direct et VOD, sur tous vos écrans.</p>
-      </div>
-      <div>
-        <h4>Programmes</h4>
-        <a href="#direct">Direct</a><a href="#films">Films</a><a href="#series">Séries</a><a href="#sport">Sport</a>
       </div>
       <div>
         <h4>Abonnement</h4>
