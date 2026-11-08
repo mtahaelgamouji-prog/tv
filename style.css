@@ -15,7 +15,7 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
 body {
-  font-family: "Inter", system-ui, sans-serif;
+  font-family: "Barlow", system-ui, sans-serif;
   background: var(--bg); color: var(--text);
   line-height: 1.55; -webkit-font-smoothing: antialiased;
 }
@@ -289,3 +289,10 @@ button { font: inherit; color: inherit; }
 .compat__more span { display: block; font-size: .78rem; color: var(--muted); font-weight: 600; }
 .compat__note { color: #6b6b73; font-size: .75rem; margin-top: 14px; }
 @media (max-width: 560px) { .compat__grid { grid-template-columns: repeat(2, 1fr); } }
+
+/* Titres en gras italique */
+.billboard__title, .section__title, .faq-title, .cta h2, .price, .strip strong, .logo {
+  font-style: italic; font-weight: 900; letter-spacing: -.5px;
+}
+.billboard__title, .section__title, .faq-title, .cta h2 { text-transform: uppercase; }
+.btn { font-weight: 700; font-size: 1.02rem; }
